@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Voting</title>
+<!--<link rel="stylesheet" type="text/css" href="index.css">-->
+<!--<script src="./node_modules/web3/dist/web3.min.js"></script>-->
+<link href='./bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="./web3.js"></script>
+<script src="./index.js"></script>
+
+ <h1>BlockVote</h1>
+	  <div id="ID">Your Account ID: </div>
+	  <div id="bal">Balance: </div>
+	  <hr>
+	  <div class="table-responsive">
+		<table class="table table-bordered">
+		  <thead>
+			<tr>
+			  <th>Candidate</th>
+			  <th>Votes</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>Candidate 1</td>
+			  <td id="candidate-1"></td>
+			</tr>
+			<tr>
+			  <td>Candidate 2</td>
+			  <td id="candidate-2"></td>
+			</tr>
+			<tr>
+			  <td>Candidate 3</td>
+			  <td id="candidate-3"></td>
+			</tr>
+		  </tbody>
+		</table>
+	  </div>
+	  <label for="name" class="col-lg-2 control-label">Voter Id</label>
+	  <input type="text" id="vvid">
+	  <hr>
+		<select id="candidate">
+			  <option value="1">Candidate 1</option>
+			  <option value="2">Candidate 2</option>
+			  <option value="3">Candidate 3</option>
+		  </select>
+	  <a href="#" onclick="voteForCandidate()" class="btn btn-primary" id="vote">Vote</a>
+	  <a href="#" onclick="countForCandidate()" class="btn btn-primary">Count</a>
+	  <hr>	  
+	  <a href="#" onclick="winner()" class="btn btn-primary" id="win1">Winner</a>
+	  <br><br>
+	  <div id="win"></div>
+
+</div>
+
+
+</body>
+</html>
